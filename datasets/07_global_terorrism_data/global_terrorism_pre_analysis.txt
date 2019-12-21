@@ -1,0 +1,136 @@
+atributo;descricao;tipo;importancia;porcentagem_null;qtd_categorias
+eventid;ID de 12 dígitos que caracteriza o incidente Os 8 primeiros dígitos referem-se a data na qual o incidente foi registrado (yyyymmdd);qualitativo;alta;0.0;181691
+iyear;Ano de acontecimento do incidente;qualitativo;alta;0.0;47
+imonth;Mês de acontecimento do incidente;qualitativo;alta;0.0;13
+iday;Dia de acontecimento do incidente;qualitativo;alta;0.0;32
+approxdate;Data aproximada do incidente;qualitativo;baixa;0.95;2244
+extended;"1 = ""Yes"" significa que o incidente durou mais que 24h - 0 = ""No"" significa que o incidente durou menos que 24h";qualitativo;alta;0.0;2
+resolution;sem informações;qualitativo;baixa;0.99;1859
+country;Código do país de acontecimento do incidente;qualitativo;baixa;0.0;205
+country_txt;Nome do país de acontecimento do incidente;qualitativo;alta;0.0;205
+region;Código da região de acontecimento do incidente código;qualitativo;baixa;0.0;12
+region_txt;Nome da região de acontecimento do incidente;qualitativo;alta;0.0;12
+provstate;Nome (no momento do incidente) da região subnacional administrativa de 1ª ordem;qualitativo;media;0.0;2855
+city;Cidade, vila ou município do incidente;qualitativo;alta;0.0;36674
+latitude;Latitude da cidade onde o incidente ocorreu;quantitativo;alta;0.03;48322
+longitude;Longitude da cidade onde o incidente ocorreu;quantitativo;alta;0.03;48039
+specificity;sem informações, mas aparenta indicar a magnitude do incidente;qualitativo;alta;0.0;5
+vicinity;sem informações;qualitativo;baixa;0.0;3
+location;sem informações;qualitativo;media;0.69;44109
+summary;sem informações, mas aparenta trazer uma breve descrição sobre o incidente;qualitativo;alta;0.36;112492
+crit1;sem informações;qualitativo;baixa;0.0;2
+crit2;sem informações;qualitativo;baixa;0.0;2
+crit3;sem informações;qualitativo;baixa;0.0;2
+doubtterr;sem informações;qualitativo;baixa;0.0;3
+alternative;sem informações;qualitatvo;baixa;0.84;5
+alternative_txt;De certa forma categorizam o incidente em 5 tipos diferentes;media;;0.84;5
+multiple;sem informações;qualitativo;baixa;0.0;2
+success;Indica o sucesso do ataque terrorista;qualitativo;alta;0.0;2
+suicide;"1 = ""Yes"" indica um atentado suicida - 0 = ""No"" indica que não foi um atentado suicida";qualitativo;alta;0.0;2
+attacktype1;Código que relaciona o método de ataque do incidente;qualitativo;baixa;0.0;9
+attacktype1_txt;Nome que relaciona o método de ataque do incidente;qualitativo;alta;0.0;9
+attacktype2;sem informações;qualitativo;baixa;0.97;9
+attacktype2_txt;sem informações;qualitativo;baixa;0.97;9
+attacktype3;sem informações;qualitativo;baixa;1.0;8
+attacktype3_txt;sem informações;qualitativo;baixa;1.0;8
+targtype1;Código que relaciona o alvo do ataque terrorista;qualitativo;baixa;0.0;22
+targtype1_txt;Nome que relaciona o alvo do ataque terrorista;qualitativo;alta;0.0;22
+targsubtype1;Código que relaciona um sub-alvo do ataque;qualitativo;baixa;0.06;112
+targsubtype1_txt;Nome que relaciona um sub-alvo do ataque;qualitativo;baixa;0.06;112
+corp1;sem informações, porém aparenta detalhar ainda mais o alvo do ataque a nível de título ou cargo;qualitativo;alta;0.23;33238
+target1;Detalhe do alvo a nível de nome/cargo pessoal;qualitativo;alta;0.0;86006
+natlty1;Código da nacionalidade do alvo do ataque;qualitativo;baixa;0.01;215
+natlty1_txt;Nacionalidade do alvo do ataque;qualitativo;alta;0.01;215
+targtype2;sem informações;qualitativo;baixa;0.94;22
+targtype2_txt;sem informações;qualitativo;baixa;0.94;22
+targsubtype2;sem informações;qualitativo;baixa;0.94;107
+targsubtype2_txt;sem informações;qualitativo;baixa;0.94;107
+corp2;sem informações;qualitativo;baixa;0.94;2691
+target2;sem informações;qualitativo;baixa;0.94;5043
+natlty2;sem informações;qualitativo;baixa;0.94;158
+natlty2_txt;sem informações;qualitativo;baixa;0.94;158
+targtype3;sem informações;qualitativo;baixa;0.99;20
+targtype3_txt;sem informações;qualitativo;baixa;0.99;20
+targsubtype3;sem informações;qualitativo;baixa;0.99;92
+targsubtype3_txt;sem informações;qualitativo;baixa;0.99;92
+corp3;sem informações;qualitativo;baixa;0.99;422
+target3;sem informações;qualitativo;baixa;0.99;720
+natlty3;sem informações;qualitativo;baixa;0.99;110
+natlty3_txt;sem informações;qualitativo;baixa;0.99;110
+gname;Nome do grupo responsável pelo ataque;qualitativo;alta;0.0;3537
+gsubname;Detalhes adicionais do grupo responsável pelos ataques (facção, por exemplo);qualitativo;baixa;0.97;1183
+gname2;sem informações;qualitativo;baixa;0.99;433
+gsubname2;sem informações;qualitativo;baixa;1.0;60
+gname3;sem informações;qualitativo;baixa;1.0;116
+gsubname3;sem informações;qualitativo;baixa;1.0;14
+motive;Motivo do ataque;qualitativo;alta;0.72;14490
+guncertain1;sem informações;qualitativo;baixa;0.0;2
+guncertain2;sem informações;qualitativo;baixa;0.99;2
+guncertain3;sem informações;qualitativo;baixa;1.0;2
+individual;sem informações, porém provavelmente indica se o ataque foi planejado individualmente ou não;qualitativo;media;0.0;2
+nperps;Número total de terroristas participantes do ataque;quantitativo;alta;0.39;113
+nperpcap;sem informações;qualitativo;baixa;0.38;50
+claimed;sem informações;qualitativo;baixa;0.36;3
+claimmode;sem informações;qualitativo;baixa;0.89;10
+claimmode_txt;sem informações;qualitativo;baixa;0.89;10
+claim2;sem informações;qualitativo;baixa;0.99;3
+claimmode2;sem informações;qualitativo;baixa;1.0;9
+claimmode2_txt;sem informações;qualitativo;baixa;1.0;9
+claim3;sem informações;qualitativo;baixa;1.0;2
+claimmode3;sem informações;qualitativo;baixa;1.0;8
+claimmode3_txt;sem informações;qualitativo;baixa;1.0;8
+compclaim;sem informações;qualitativo;baixa;0.97;3
+weaptype1;Código que define o tipo de arma/artefato presente no ataque;qualitativo;baixa;0.0;12
+weaptype1_txt;Tipo de arma/artefato presente no ataque;qualitativo;alta;0.0;12
+weapsubtype1;Código do subtipo da arma/artefato presente no ataque;qualitativo;baixa;0.11;30
+weapsubtype1_txt;Subtipo da arma/artefato presente no ataque;qualitativo;baixa;0.11;30
+weaptype2;Código que define um segundo tipo de arma/artefato presente no ataque;qualitativo;baixa;0.93;11
+weaptype2_txt;Segundo tipo de arma/artefato presente no ataque;qualitativo;baixa;0.93;11
+weapsubtype2;Código de um segundo subtipo arma/artefato presente no ataque;qualitativo;baixa;0.94;28
+weapsubtype2_txt;Segundo subtipo da arma/artefato presente no ataque;qualitativo;baixa;0.94;28
+weaptype3;Código que define um terceiro tipo de arma/artefato presente no ataque;qualitativo;baixa;0.99;10
+weaptype3_txt;Terceiro tipo de arma/artefato presente no ataque;qualitativo;baixa;0.99;10
+weapsubtype3;Código de um terceiro subtipo da arma/artefato presente no ataque;qualitativo;baixa;0.99;22
+weapsubtype3_txt;Terceiro subtipo da arma/artefato presente no ataque;qualitativo;baixa;0.99;22
+weaptype4;Código que define um quarto tipo de arma/artefato presente no ataque;qualitativo;baixa;1.0;5
+weaptype4_txt;Quarto tipo de arma/artefato presente no ataque;qualitativo;baixa;1.0;5
+weapsubtype4;Código de um quarto subtipo da arma/artefato presente no ataque;qualitativo;baixa;1.0;16
+weapsubtype4_txt;Quarto subtipo da arma/artefato presente no ataque;qualitativo;baixa;1.0;16
+weapdetail;Detalhes da arma/artefato presente no ataque;qualitativo;baixa;0.37;19148
+nkill;Número confirmado de mortos no incidente relatado;quantitativo;alta;0.06;205
+nkillus;Número de cidadãos americanos mortos no incidente relatado;quantitativo;media;0.35;31
+nkillter;sem informações, porém provavelmente indica o número de terroristas mortos no ataque;quantitativo;alta;0.37;96
+nwound;Número confirmado de vítimas não-fatais do atentado;quantitativo;alta;0.09;238
+nwoundus;Número confirmado de cidadãos americanos vítimas não-fatais do atentado;quantitativo;media;0.36;44
+nwoundte;Número confirmado de terroristas vítimas não-fatais do atentado;quantitativo;alta;0.38;44
+property;sem informações;qualitativo;baixa;0.0;3
+propextent;sem informações;qualitativo;baixa;0.65;4
+propextent_txt;sem informações, mas provavelmente este atributo descreve a extensão do atentado;qualitativo;media;0.65;4
+propvalue;sem informações;qualitativo;baixa;0.79;659
+propcomment;sem informações, mas traz comentários a respeito da proporção do atentado;qualitativo;media;0.68;19157
+ishostkid;sem informações, mas provavelmente trata-se de um flag que indica se houve crianças reféns;qualitativo;alta;0.0;3
+nhostkid;sem informações, mas provavelmente trata-se de um flag que indica se houve crianças reféns;quantitativo;alta;0.93;209
+nhostkidus;sem informações, mas provavelmente trata-se de um flag que indica se houve crianças americanas reféns;quantitativo;baixa;0.93;27
+nhours;sem informações;qualitativo;baixa;0.98;35
+ndays;sem informações;qualitativo;baixa;0.96;328
+divert;sem informações;qualitativo;baixa;1.0;143
+kidhijcountry;sem informações;qualitativo;baixa;0.98;217
+ransom;sem informações;qualitativo;baixa;0.57;3
+ransomamt;sem informações;qualitativo;baixa;0.99;429
+ransomamtus;sem informações;qualitativo;baixa;1.0;23
+ransompaid;sem informações;qualitativo;baixa;1.0;156
+ransompaidus;sem informações;qualitativo;baixa;1.0;8
+ransomnote;sem informações;qualitativo;baixa;1.0;387
+hostkidoutcome;sem informações;quantitativo;baixa;0.94;7
+hostkidoutcome_txt;sem informações;quantitativo;baixa;0.94;7
+nreleased;sem informações;qualitativo;baixa;0.94;156
+addnotes;sem informações;qualitativo;baixa;0.84;15429
+scite1;sem informações;qualitativo;baixa;0.36;83988
+scite2;sem informações;qualitativo;baixa;0.58;62263
+scite3;sem informações;qualitativo;baixa;0.76;36090
+dbsource;sem informações, porém provavelmente descreve a fonte do Banco de Dados;qualitativo;baixa;0.0;26
+INT_LOG;sem informações;qualitativo;baixa;0.0;3
+INT_IDEO;sem informações;qualitativo;baixa;0.0;3
+INT_MISC;sem informações;qualitativo;baixa;0.0;3
+INT_ANY;sem informações;qualitativo;baixa;0.0;3
+related;sem informações;qualitativo;baixa;0.86;14306

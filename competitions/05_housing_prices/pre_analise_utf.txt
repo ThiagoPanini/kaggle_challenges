@@ -1,0 +1,80 @@
+﻿nome_variavel;descricao;tipo;segmento;expect
+MSSubClass;Identifica o tipo de moradia da residência;Categórico;Building (Construção);Média
+MSZoning;Classifica o imóvel por zona;Categórico;Location (Localização);Alta
+LotFrontage;Dimensão do perímetro frontal da casa;Numérico;Space (Espaço);Alta
+LotArea;Área do loteamento;Numérico;Space (Espaço);Alta
+Street;Característica da rua que dá acesso a moradia;Categórico;Building (Construção);Média
+Alley;Característica da viela que dá acesso a moradia;Categórico;Building (Construção);Baixa
+LotShape;Formato geral da moradia;Categórico;Building (Construção);Média
+LandContour;Nivelamento da moradia;Categórico;Building (Construção);Baixa
+Utilities;Serviços de utilidade pública;Categórico;Building (Construção);Alta
+LotConfig;Configuração do loteamento;Categórico;Building (Construção);Baixa
+LandSlope;Declive da propriedade;Categórico;Building (Construção);Baixa
+Neighborhood;Localidade relacionada as fronteiras da cidade;Categórico;Location (Localização);Baixa
+Condition1;Proximidade com pontos importantes da cidade;Categórico;Location (Localização);Média
+Condition2;Proximidade com pontos importantes da cidade (se houver mais de um);Categórico;Location (Localização);Baixa
+BldgType;Tipo de habitação;Categórico;Building (Construção);Média
+HouseStyle;Estilo da habitação;Categórico;Building (Construção);Média
+OverallQual;Score do material e acabamento da moradia;Categórico;Building (Construção);Alta
+OverallCond;Score da condição geral da moradia;Categórico;Building (Construção);Alta
+YearBuilt;Ano de construção da casa;Numérico;Building (Construção);Alta
+YearRemodAdd;Ano de remodelação da casa (mesmo que YearBuilt se a casa não foi remodelada);Numérico;Building (Construção);Média
+RoofStyle;Tipo de cobertura da casa (telhado);Categórico;Building (Construção);Média
+RoodMatl;Material utilizado na cobertura (telhado);Categórico;Building (Construção);Média
+Exterior1st;Cobertura externa da casa;Categórico;Building (Construção);Baixa
+Exterior2nd;Cobertura externa da casa (se houver mais de uma cobertura);Categórico;Building (Construção);Baixa
+MasVnrType;Tipo de alvenaria utilizada;Categórico;Building (Construção);Baixa
+MasVnrArea;Área coberta pela alvenaria;Categórico;Building (Construção);Baixa
+ExterQual;Qualidade do material utilizado no exterior;Categórico;Building (Construção);Alta
+ExterCond;Condição do material externo na data de observação;Categórico;Building (Construção);Alta
+Foundation;Tipo de alicerce utilizado na construção;Categórico;Building (Construção);Alta
+BsmtQual;Classifica a moradia quanto ao tamanho do porão;Categórico;Space (Espaço);Baixa
+BsmtCond;Classifica condição geral do porão;Categórico;Building (Construção);Média
+BsmtExposure;Exposição do porão da moradia;Categórico;Building (Construção);Baixa
+BsmtFinType1;Score do acabamento da região relacionada ao porão;Categórico;Building (Construção);Média
+BsmtFinSF1;Área coberta pelo acabamento do tipo 1 (atributo BsmtFinType1);Numérico;Building (Construção);Baixa
+BsmtFinType2;Score do acabamento da região relacionada ao porão (se mais de um existir);Categórico;Building (Construção);Baixa
+BsmtFinSF2;Área coberta pelo acabamento do tipo 2 (atributo BsmtFinType2);Numérico;Building (Construção);Baixa
+BsmtUnfSF;Área do porão sem acabamento;Numérico;Building (Construção);Baixa
+TotalBsmtSF;Área total do porão;Numérico;Space (Espaço);Média
+Heating;Tipo de aquecimento da moradia;Categórico;Building (Construção);Alta
+HeatingQC;Qualidade do aquecimento;Categórico;Building (Construção);Alta
+CentralAir;Define se existe ou não um ar condicionado central (atributo booleano);Categórico;Building (Construção);Alta
+Electrical;Tipo de sistema elétrico da casa;Categórico;Building (Construção);Média
+1stFlrSF;Área total do primeiro andar da moradia;Numérico;Space (Espaço);Alta
+2ndFlrSF;Área total do segundo andar da moradia;Numérico;Space (Espaço);Alta
+LowQualFinSF;Área total de acabamentos de baixa qualidade em toda a moradia;Numérico;Space (Espaço);Baixa
+GrLivArea;Área total da sala de estar;Numérico;Space (Espaço);Média
+BsmtFullBath;Banheiros completos (full) da área relacionada ao porão;Numérico;Space (Espaço);Baixa
+BsmtHalfBath;Banheiros incompletos (half) da área relacionada ao porão;Numérico;Space (Espaço);Baixa
+FullBath;Quantidade de banheiros completos na casa (acima do porão);Numérico;Space (Espaço);Média
+HalfBath;Quantidade de banheiros incompletos (half) na casa (acima do porão);Numérico;Space (Espaço);Baixa
+BedroomAbvGr;Quantidade de camas na moradia (acima do porão);Numérico;Space (Espaço);Alta
+KitchenAbvGr;Quantidade de cozinhas na moradia (acima do porão);Numérico;Space (Espaço);Alta
+KitchenQual;Qualidade das cozinhas;Categórico;Building (Construção);Alta
+TotRmsAbvGrd;Quantidade total de quartos na moradia (acima do porão);Numérico;Space (Espaço);Alta
+Functional;Descreve funcionalidades da casa sob garantia;Categórico;Building (Construção);Média
+Fireplaces;Quantidade de lareiras da moradia;Numérico;Space (Espaço);Média
+FireplaceQu;Qualidade das lareiras;Categórico;Building (Construção);Baixa
+GarageType;Tipo de garagem da moradia;Categórico;Space (Espaço);Alta
+GarageYrBlt;Ano de construção da garagem;Numérico;Building (Construção);Baixa
+GarageFinish;Acabamento interno da garagem;Categórico;Building (Construção);Baixa
+GarageCars;Tamanho da garagem relacionado a quantidade de carros possíveis;Numérico;Space (Espaço);Média
+GarageArea;Área da garagem em metros quadrados;Numérico;Space (Espaço);Média
+GarageQual;Qualidade da garagem;Categórico;Building (Construção);Baixa
+GarageCond;Score que define as condições da garagem;Categórico;Building (Construção);Baixa
+PavedDrive;Atributo que define a pavimentação da rua (dentro da moradia);Categórico;Building (Construção);Baixa
+WoodDeckSF;Área do deck de madeira presente na moradia;Numérico;Space (Espaço);Média
+OpenPorchSF;Área de varanda aberta na moradia;Numérico;Space (Espaço);Média
+EnclosedPorch;Área de varanda fechada na moradia;Numérico;Space (Espaço);Média
+3SsnPorch;Área de varande de três temporadas (?);Numérico;Space (Espaço);Baixa
+ScreenPorch;Área de tela na varanda da moradia;Numérico;Space (Espaço);Média
+PoolArea;Área de piscina presente na moradia;Numérico;Space (Espaço);Média
+PoolQC;Qualidade da piscina;Categórico;Building (Construção);Média
+Fence;Qualidade do cercado presente na moradia;Categórico;Building (Construção);Baixa
+MiscFeature;Algumas features não inclusas nas demais categorias;Categórico;Building (Construção);Baixa
+MiscVal;Valor das features não inclusas em critérios de quantidades;Numérico;Building (Construção);Baixa
+MoSold;Mês no qual a venda da moradia foi efetivada;Numérico;Space (Espaço);Baixa
+YrSold;Ano no qual a venda da moradia foi efetivada;Numérico;Space (Espaço);Baixa
+SaleType;Tipo da venda;Categórico;Space (Espaço);Baixa
+SaleCondition;Condições da venda;Categórico;Space (Espaço);Baixa
