@@ -1,0 +1,136 @@
+atributo;descricao;tipo;importancia
+eventid;ID de 12 dígitos que caracteriza o incidente Os 8 primeiros dígitos referem-se a data na qual o incidente foi registrado (yyyymmdd);qualitativo;alta
+iyear;Ano de acontecimento do incidente;qualitativo;alta
+imonth;Mês de acontecimento do incidente;qualitativo;alta
+iday;Dia de acontecimento do incidente;qualitativo;alta
+approxdate;Data aproximada do incidente;qualitativo;baixa
+extended;1 = "Yes" significa que o incidente durou mais que 24h - 0 = "No" significa que o incidente durou menos que 24h;qualitativo;alta
+resolution;sem informações;qualitativo;baixa
+country;Código do país de acontecimento do incidente;qualitativo;baixa
+country_txt;Nome do país de acontecimento do incidente;qualitativo;alta
+region;Código da região de acontecimento do incidente código;qualitativo;baixa
+region_txt;Nome da região de acontecimento do incidente;qualitativo;alta
+provstate;Nome (no momento do incidente) da região subnacional administrativa de 1ª ordem;qualitativo;media
+city;Cidade, vila ou município do incidente;qualitativo;alta
+latitude;Latitude da cidade onde o incidente ocorreu;quantitativo;alta
+longitude;Longitude da cidade onde o incidente ocorreu;quantitativo;alta
+specificity;sem informações, mas aparenta indicar a magnitude do incidente;qualitativo;alta
+vicinity;sem informações;qualitativo;baixa
+location;sem informações;qualitativo;media
+summary;sem informações, mas aparenta trazer uma breve descrição sobre o incidente;qualitativo;alta
+crit1;sem informações;qualitativo;baixa
+crit2;sem informações;qualitativo;baixa
+crit3;sem informações;qualitativo;baixa
+doubtterr;sem informações;qualitativo;baixa
+alternative;sem informações;qualitatvo;baixa
+alternative_txt;De certa forma categorizam o incidente em 5 tipos diferentes;media
+multiple;sem informações;qualitativo;baixa
+success;Indica o sucesso do ataque terrorista;qualitativo;alta
+suicide;1 = "Yes" indica um atentado suicida - 0 = "No" indica que não foi um atentado suicida;qualitativo;alta
+attacktype1;Código que relaciona o método de ataque do incidente;qualitativo;baixa
+attacktype1_txt;Nome que relaciona o método de ataque do incidente;qualitativo;alta
+attacktype2;sem informações;qualitativo;baixa
+attacktype2_txt;sem informações;qualitativo;baixa
+attacktype3;sem informações;qualitativo;baixa
+attacktype3_txt;sem informações;qualitativo;baixa
+targtype1;Código que relaciona o alvo do ataque terrorista;qualitativo;baixa
+targtype1_txt;Nome que relaciona o alvo do ataque terrorista;qualitativo;alta
+targsubtype1;Código que relaciona um sub-alvo do ataque;qualitativo;baixa
+targsubtype1_txt;Nome que relaciona um sub-alvo do ataque;qualitativo;baixa
+corp1;sem informações, porém aparenta detalhar ainda mais o alvo do ataque a nível de título ou cargo;qualitativo;alta
+target1;Detalhe do alvo a nível de nome/cargo pessoal;qualitativo;alta
+natlty1;Código da nacionalidade do alvo do ataque;qualitativo;baixa
+natlty1_txt;Nacionalidade do alvo do ataque;qualitativo;alta
+targtype2;sem informações;qualitativo;baixa
+targtype2_txt;sem informações;qualitativo;baixa
+targsubtype2;sem informações;qualitativo;baixa
+targsubtype2_txt;sem informações;qualitativo;baixa
+corp2;sem informações;qualitativo;baixa
+target2;sem informações;qualitativo;baixa
+natlty2;sem informações;qualitativo;baixa
+natlty2_txt;sem informações;qualitativo;baixa
+targtype3;sem informações;qualitativo;baixa
+targtype3_txt;sem informações;qualitativo;baixa
+targsubtype3;sem informações;qualitativo;baixa
+targsubtype3_txt;sem informações;qualitativo;baixa
+corp3;sem informações;qualitativo;baixa
+target3;sem informações;qualitativo;baixa
+natlty3;sem informações;qualitativo;baixa
+natlty3_txt;sem informações;qualitativo;baixa
+gname;Nome do grupo responsável pelo ataque;qualitativo;alta
+gsubname;Detalhes adicionais do grupo responsável pelos ataques (facção, por exemplo);qualitativo;baixa
+gname2;sem informações;qualitativo;baixa
+gsubname2;sem informações;qualitativo;baixa
+gname3;sem informações;qualitativo;baixa
+gsubname3;sem informações;qualitativo;baixa
+motive;Motivo do ataque;qualitativo;alta
+guncertain1;sem informações;qualitativo;baixa
+guncertain2;sem informações;qualitativo;baixa
+guncertain3;sem informações;qualitativo;baixa
+individual;sem informações, porém provavelmente indica se o ataque foi planejado individualmente ou não;qualitativo;media
+nperps;Número total de terroristas participantes do ataque;quantitativo;alta
+nperpcap;sem informações;qualitativo;baixa
+claimed;sem informações;qualitativo;baixa
+claimmode;sem informações;qualitativo;baixa
+claimmode_txt;sem informações;qualitativo;baixa
+claim2;sem informações;qualitativo;baixa
+claimmode2;sem informações;qualitativo;baixa
+claimmode2_txt;sem informações;qualitativo;baixa
+claim3;sem informações;qualitativo;baixa
+claimmode3;sem informações;qualitativo;baixa
+claimmode3_txt;sem informações;qualitativo;baixa
+compclaim;sem informações;qualitativo;baixa
+weaptype1;Código que define o tipo de arma/artefato presente no ataque;qualitativo;baixa
+weaptype1_txt;Tipo de arma/artefato presente no ataque;qualitativo;alta
+weapsubtype1;Código do subtipo da arma/artefato presente no ataque;qualitativo;baixa
+weapsubtype1_txt;Subtipo da arma/artefato presente no ataque;qualitativo;baixa
+weaptype2;Código que define um segundo tipo de arma/artefato presente no ataque;qualitativo;baixa
+weaptype2_txt;Segundo tipo de arma/artefato presente no ataque;qualitativo;baixa
+weapsubtype2;Código de um segundo subtipo arma/artefato presente no ataque;qualitativo;baixa
+weapsubtype2_txt;Segundo subtipo da arma/artefato presente no ataque;qualitativo;baixa
+weaptype3;Código que define um terceiro tipo de arma/artefato presente no ataque;qualitativo;baixa
+weaptype3_txt;Terceiro tipo de arma/artefato presente no ataque;qualitativo;baixa
+weapsubtype3;Código de um terceiro subtipo da arma/artefato presente no ataque;qualitativo;baixa
+weapsubtype3_txt;Terceiro subtipo da arma/artefato presente no ataque;qualitativo;baixa
+weaptype4;Código que define um quarto tipo de arma/artefato presente no ataque;qualitativo;baixa
+weaptype4_txt;Quarto tipo de arma/artefato presente no ataque;qualitativo;baixa
+weapsubtype4;Código de um quarto subtipo da arma/artefato presente no ataque;qualitativo;baixa
+weapsubtype4_txt;Quarto subtipo da arma/artefato presente no ataque;qualitativo;baixa
+weapdetail;Detalhes da arma/artefato presente no ataque;qualitativo;baixa
+nkill;Número confirmado de mortos no incidente relatado;quantitativo;alta
+nkillus;Número de cidadãos americanos mortos no incidente relatado;quantitativo;media
+nkillter;sem informações, porém provavelmente indica o número de terroristas mortos no ataque;quantitativo;alta
+nwound;Número confirmado de vítimas não-fatais do atentado;quantitativo;alta
+nwoundus;Número confirmado de cidadãos americanos vítimas não-fatais do atentado;quantitativo;media
+nwoundte;Número confirmado de terroristas vítimas não-fatais do atentado;quantitativo;alta
+property;sem informações;qualitativo;baixa
+propextent;sem informações;qualitativo;baixa
+propextent_txt;sem informações, mas provavelmente este atributo descreve a extensão do atentado;qualitativo;media
+propvalue;sem informações;qualitativo;baixa
+propcomment;sem informações, mas traz comentários a respeito da proporção do atentado;qualitativo;media
+ishostkid;sem informações, mas provavelmente trata-se de um flag que indica se houve crianças reféns;qualitativo;alta
+nhostkid;sem informações, mas provavelmente trata-se de um flag que indica se houve crianças reféns;quantitativo;alta
+nhostkidus;sem informações, mas provavelmente trata-se de um flag que indica se houve crianças americanas reféns;quantitativo;baixa
+nhours;sem informações;qualitativo;baixa
+ndays;sem informações;qualitativo;baixa
+divert;sem informações;qualitativo;baixa
+kidhijcountry;sem informações;qualitativo;baixa
+ransom;sem informações;qualitativo;baixa
+ransomamt;sem informações;qualitativo;baixa
+ransomamtus;sem informações;qualitativo;baixa
+ransompaid;sem informações;qualitativo;baixa
+ransompaidus;sem informações;qualitativo;baixa
+ransomnote;sem informações;qualitativo;baixa
+hostkidoutcome;sem informações;quantitativo;baixa
+hostkidoutcome_txt;sem informações;quantitativo;baixa
+nreleased;sem informações;qualitativo;baixa
+addnotes;sem informações;qualitativo;baixa
+scite1;sem informações;qualitativo;baixa
+scite2;sem informações;qualitativo;baixa
+scite3;sem informações;qualitativo;baixa
+dbsource;sem informações, porém provavelmente descreve a fonte do Banco de Dados;qualitativo;baixa
+INT_LOG;sem informações;qualitativo;baixa
+INT_IDEO;sem informações;qualitativo;baixa
+INT_MISC;sem informações;qualitativo;baixa
+INT_ANY;sem informações;qualitativo;baixa
+related;sem informações;qualitativo;baixa
