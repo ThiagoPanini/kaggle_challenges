@@ -1,32 +1,32 @@
 anomesdia,anomesdia_datetime,model,feature,importance
-202009,2020-09-12 13:28:48.257555,LightGBM,amount_per_year,447
-202009,2020-09-12 13:28:48.257555,LightGBM,credit_amount,384
-202009,2020-09-12 13:28:48.257555,LightGBM,age,377
-202009,2020-09-12 13:28:48.257555,LightGBM,duration,232
-202009,2020-09-12 13:28:48.257555,LightGBM,weighted_amount_per_year,191
-202009,2020-09-12 13:28:48.257555,LightGBM,job,87
-202009,2020-09-12 13:28:48.257555,LightGBM,purpose_radio/TV,52
-202009,2020-09-12 13:28:48.257555,LightGBM,housing_own,52
-202009,2020-09-12 13:28:48.257555,LightGBM,saving_accounts_nan,51
-202009,2020-09-12 13:28:48.257555,LightGBM,checking_account_nan,47
-202009,2020-09-12 13:28:48.257555,LightGBM,checking_account_little,35
-202009,2020-09-12 13:28:48.257555,LightGBM,sex_female,34
-202009,2020-09-12 13:28:48.257555,LightGBM,purpose_education,29
-202009,2020-09-12 13:28:48.257555,LightGBM,sex_male,26
-202009,2020-09-12 13:28:48.257555,LightGBM,checking_account_rich,21
-202009,2020-09-12 13:28:48.257555,LightGBM,purpose_business,20
-202009,2020-09-12 13:28:48.257555,LightGBM,saving_accounts_little,19
-202009,2020-09-12 13:28:48.257555,LightGBM,housing_free,18
-202009,2020-09-12 13:28:48.257555,LightGBM,purpose_car,17
-202009,2020-09-12 13:28:48.257555,LightGBM,checking_account_moderate,15
-202009,2020-09-12 13:28:48.257555,LightGBM,saving_accounts_quite rich,11
-202009,2020-09-12 13:28:48.257555,LightGBM,saving_accounts_rich,10
-202009,2020-09-12 13:28:48.257555,LightGBM,housing_rent,9
-202009,2020-09-12 13:28:48.257555,LightGBM,saving_accounts_moderate,0
-202009,2020-09-12 13:28:48.257555,LightGBM,housing_nan,0
-202009,2020-09-12 13:28:48.257555,LightGBM,purpose_domestic appliances,0
-202009,2020-09-12 13:28:48.257555,LightGBM,purpose_furniture/equipment,0
-202009,2020-09-12 13:28:48.257555,LightGBM,sex_nan,0
-202009,2020-09-12 13:28:48.257555,LightGBM,purpose_repairs,0
-202009,2020-09-12 13:28:48.257555,LightGBM,purpose_vacation/others,0
-202009,2020-09-12 13:28:48.257555,LightGBM,purpose_nan,0
+202009,2020-09-14 00:00:55.102367,LightGBM,amount_per_year,447
+202009,2020-09-14 00:00:55.102367,LightGBM,credit_amount,384
+202009,2020-09-14 00:00:55.102367,LightGBM,age,377
+202009,2020-09-14 00:00:55.102367,LightGBM,duration,232
+202009,2020-09-14 00:00:55.102367,LightGBM,weighted_amount_per_year,191
+202009,2020-09-14 00:00:55.102367,LightGBM,job,87
+202009,2020-09-14 00:00:55.102367,LightGBM,purpose_radio/TV,52
+202009,2020-09-14 00:00:55.102367,LightGBM,housing_own,52
+202009,2020-09-14 00:00:55.102367,LightGBM,saving_accounts_nan,51
+202009,2020-09-14 00:00:55.102367,LightGBM,checking_account_nan,47
+202009,2020-09-14 00:00:55.102367,LightGBM,checking_account_little,35
+202009,2020-09-14 00:00:55.102367,LightGBM,sex_female,34
+202009,2020-09-14 00:00:55.102367,LightGBM,purpose_education,29
+202009,2020-09-14 00:00:55.102367,LightGBM,sex_male,26
+202009,2020-09-14 00:00:55.102367,LightGBM,checking_account_rich,21
+202009,2020-09-14 00:00:55.102367,LightGBM,purpose_business,20
+202009,2020-09-14 00:00:55.102367,LightGBM,saving_accounts_little,19
+202009,2020-09-14 00:00:55.102367,LightGBM,housing_free,18
+202009,2020-09-14 00:00:55.102367,LightGBM,purpose_car,17
+202009,2020-09-14 00:00:55.102367,LightGBM,checking_account_moderate,15
+202009,2020-09-14 00:00:55.102367,LightGBM,saving_accounts_quite rich,11
+202009,2020-09-14 00:00:55.102367,LightGBM,saving_accounts_rich,10
+202009,2020-09-14 00:00:55.102367,LightGBM,housing_rent,9
+202009,2020-09-14 00:00:55.102367,LightGBM,saving_accounts_moderate,0
+202009,2020-09-14 00:00:55.102367,LightGBM,housing_nan,0
+202009,2020-09-14 00:00:55.102367,LightGBM,purpose_domestic appliances,0
+202009,2020-09-14 00:00:55.102367,LightGBM,purpose_furniture/equipment,0
+202009,2020-09-14 00:00:55.102367,LightGBM,sex_nan,0
+202009,2020-09-14 00:00:55.102367,LightGBM,purpose_repairs,0
+202009,2020-09-14 00:00:55.102367,LightGBM,purpose_vacation/others,0
+202009,2020-09-14 00:00:55.102367,LightGBM,purpose_nan,0

@@ -8,10 +8,8 @@ trained for the task. This will also build a flow for receiving new data and sco
 --- SUMMARY ---
 
 1. Reading new data received (production)
-2. Building Blocks
-    2.1 Custom Transformers
-    2.2 Applying Pipelines
-4. Scoring the data with the trained model
+2. Reading pkl files
+3. Scoring the data with the trained model
 
 ---------------------------------------------------------------
 Written by Thiago Panini - Latest version: September 12th 2020
@@ -21,13 +19,12 @@ Written by Thiago Panini - Latest version: September 12th 2020
 # Importing libraries
 import pandas as pd
 import os
-import numpy as np
 from utils.custom_transformers import import_data
-from sklearn.base import BaseEstimator, TransformerMixin
+from dev.transformers import *
 from joblib import load
+from datetime import datetime
 from warnings import filterwarnings
 filterwarnings('ignore')
-from datetime import datetime
 
 
 """
@@ -46,89 +43,33 @@ df = import_data(path=os.path.join(data_path, filename))
 
 """
 -----------------------------------
-------- 2. BUILDING BLOCKS --------
-     2.1 Custom Transformers
+------ 2. READING PKL FILES -------
 -----------------------------------
 """
 
-
-class AddCreditFeatures(BaseEstimator, TransformerMixin):
-    """
-    Class for creating new features for this credit risk analysis
-    """
-    def __init__(self, amount_per_year=True, weighted_amount_per_year=True):
-        self.amount_per_year = amount_per_year
-        self.weighted_amount_per_year = weighted_amount_per_year
-        self.aux_cols = []
-
-    def fit(self, X, y=None):
-        return self
-
-    def transform(self, X, y=None):
-        # New feature: Amount per year
-        if self.amount_per_year:
-            X['amount_per_year'] = X['credit_amount'] / X['duration']
-
-        # New feature: Weighted amount per year
-        if self.weighted_amount_per_year:
-            # Creating dictionaries for mapping saving and checking account features
-            checking_acc_map = {
-                'rich': 4,
-                'moderate': 3,
-                'little': 2
-            }
-            saving_acc_map = {
-                'rich': 4,
-                'quite_rich': 3.5,
-                'moderate': 3,
-                'little': 2
-            }
-
-            # Mapping checking account and reating new feature
-            X['checking_acc_map'] = X['checking_account'].map(checking_acc_map)
-            X['saving_acc_map'] = X['saving_accounts'].map(saving_acc_map)
-            X['weighted_amount_per_year'] = (X['checking_acc_map'] * X['saving_acc_map'] * X['credit_amount'])\
-                                             / X['duration']
-            self.aux_cols += ['checking_acc_map', 'saving_acc_map']
-
-        # Dropping aux map columns and returning the DataFrame
-        return X.drop(self.aux_cols, axis=1)
+# End to end pipeline
+e2e_pipeline = load('../pipelines/e2e_pipeline.pkl')
 
 
 """
 -----------------------------------
-------- 2. BUILDING BLOCKS --------
-      2.2 Applying Pipelines
+------- 3. SCORING THE DATA -------
 -----------------------------------
 """
 
-# Creating objects for pkl files
-posr_pipeline = load('../pipelines/posreading_pipeline.pkl')
-prep_pipeline = load('../pipelines/dataprep_pipeline.pkl')
-
-# Applying the pipelines
-df_prep = posr_pipeline.fit_transform(df)
-X_prep = prep_pipeline.fit_transform(df_prep)
-
-
-"""
------------------------------------
------------ 3. SCORING ------------
------------------------------------
-"""
-
-# Reading the trained model
-model = load('../models/lightgbm_model.pkl')
-
-# Scoring the model with the predict_proba method
-df_prep['model_score'] = model.predict_proba(X_prep)[:, 1]
+# Returning the raw proba with predict_proba method
+df['model_score'] = e2e_pipeline.predict_proba(df)[:, 1]
 
 # Creating bins for splitting the score based on quantiles
-bins = df_prep['model_score'].quantile(np.arange(0, 1.01, 0.1)).values
+bins = df['model_score'].quantile(np.arange(0, 1.01, 0.1)).values
 labels = ['Faixa ' + str(i) for i in range(len(bins)-1, 0, -1)]
-df_prep['score_bin'] = pd.cut(df_prep['model_score'], bins=bins, labels=labels, include_lowest=True)
+df['score_bin'] = pd.cut(df['model_score'], bins=bins, labels=labels, include_lowest=True)
+raw_cols = list(df.columns)
 
 # Saving the scored data
-df_prep['anomesdia'] = datetime.now().strftime('%Y%m')
-df_prep['anomesdia_datetime'] = datetime.now()
-df_prep.to_csv('../data/scored_data.csv', index=False)
+df['anomes_scoragem'] = datetime.now().strftime('%Y%m')
+df['anomesdia_scoragem'] = datetime.now().strftime('%Y%m%d')
+df['datetime_scoragem'] = datetime.now()
+order_cols = ['anomes_scoragem', 'anomesdia_scoragem', 'datetime_sdoragem'] + raw_cols
+df = df.loc[:, order_cols]
+df.to_csv('../data/scored_data.csv', index=False)
